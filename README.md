@@ -333,6 +333,17 @@ jupyter notebook
 - Predictions outside the observed feature ranges may be unreliable.
 - Model predictions should be treated as estimates rather than guaranteed outcomes.
 
+## Decision Log
+
+| Decision | Reason |
+|---|---|
+| Selected Ecommerce Customers dataset | Suitable for predicting a continuous target variable. |
+| Excluded Email, Address and Avatar | Not relevant numerical predictors. |
+| Used an 80:20 train-test split | To evaluate performance on unseen data. |
+| Selected Length of Membership for single regression | Strong association with yearly spending. |
+| Selected Multiple Linear Regression | Achieved better prediction performance. |
+| Used residual analysis and VIF | To examine regression assumptions and multicollinearity. |
+
 ## ✅ Conclusion
 
 This project demonstrates the implementation and evaluation of Multiple Linear Regression using the Ecommerce Customers dataset.
